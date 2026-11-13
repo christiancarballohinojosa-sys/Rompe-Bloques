@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker Bolivia</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>BRICK BREAKER</h1>
+        <h2>BOLIVIA EDITION</h2>
+        <p>¡Rompe todos los bloques y consigue puntos!</p>
+    </header>
+
+    <main>
+        <!-- REGLAS DEL JUEGO -->
+        <section class="reglas">
+            <h3>REGLAS DEL JUEGO</h3>
+            <p>1. Mueve la plataforma para mantener la pelota.</p>
+            <p>2. Cada bloque destruido vale 10 puntos.</p>
+            <p>3. Comienzas con 3 vidas.</p>
+            <p>4. Si la pelota cae, pierdes una vida.</p>
+            <p>5. ¡Destruye todos los bloques para ganar!</p>
+        </section>
+
+        <!-- PUNTOS Y VIDAS -->
+        <section class="panel">
+            <p>PUNTOS: <span id="puntos">0</span></p>
+            <p>VIDAS: <span id="vidas">3</span></p>
+        </section>
+
+        <!-- TABLERO CANVAS Y MENSAJES -->
+        <section class="contenedor-juego">
+            <canvas id="juego" width="550" height="400"></canvas>
+            <p class="mensaje" id="mensaje">Presiona "INICIAR" para jugar</p>
+        </section>
+
+        <!-- CONTROLES -->
+        <section class="controles">
+            <button id="izquierda">◀ IZQUIERDA</button>
+            <button id="derecha">DERECHA ▶</button>
+        </section>
+
+        <section class="botones">
+            <button id="inicio">INICIAR / PAUSAR</button>
+            <button id="reiniciar">REINICIAR</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Hecho en Bolivia ♥</p>
+    </footer>
+
+    <script src="js/codigo.js"></script>
+
+</body>
+</html>
